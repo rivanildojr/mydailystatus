@@ -124,15 +124,16 @@ const Footer = () => {
       lineNumber: 7,
       columnNumber: 7
     }
-  }), "Implementado por:", __jsx("a", {
+  }), "Implementado por:", " ", __jsx("a", {
     href: "https://linkedin.com/in/rivanildojunior",
+    className: "hover:underline hover:text-red-800",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
       columnNumber: 7
     }
-  }, " Rivanildo J\xFAnior"));
+  }, "Rivanildo J\xFAnior"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);

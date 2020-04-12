@@ -4444,17 +4444,33 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 10
+      lineNumber: 7,
+      columnNumber: 5
     }
-  });
+  }, __jsx("h1", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 7
+    }
+  }, "Home"), __jsx("a", {
+    href: "/api/login",
+    className: "py-4 rounded bg-pink-800 font-bold shadow-xl block w-1/4 text-center mx-auto text-white hover:shadow",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }
+  }, "Comece por aqui"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Frivanildojr%2FDocumentos%2Ffullstack-lab-2020%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************************/
@@ -4477,5 +4493,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
