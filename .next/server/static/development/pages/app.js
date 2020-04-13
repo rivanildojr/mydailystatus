@@ -88,14 +88,25 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./Lib/auth0.js":
+/***/ "./firebase-secret.json":
+/*!******************************!*\
+  !*** ./firebase-secret.json ***!
+  \******************************/
+/*! exports provided: type, project_id, private_key_id, private_key, client_email, client_id, auth_uri, token_uri, auth_provider_x509_cert_url, client_x509_cert_url, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"type\":\"service_account\",\"project_id\":\"mydailystatus-d1232\",\"private_key_id\":\"2c30a6e1c44f7d75e884a5e072752eec26d3f3a3\",\"private_key\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCrK/xnFpx5jNok\\n3qNmn5OEV4R7rGzWU++kmJy4DmGc4nzRQgLgypQWvMGO2jf9TNToN0i5fDsW/Q8Y\\nSjRu9SN6SrkSLIkhwFLwqQ14epi79x25e2LdoPqgRVqBTvsXWd2O56GIUp/mQuQp\\nmJreRo3yo3yvD1QW/pokRNLwbaeLKUh4VPFy6Bmie68DHMwzVC9Uo3KsV10RsmeM\\nPdHYxXcHInDQvXOgIhjJNmzKPqOxoF6zpk0ewmiutmBI4Mp9VyQlonA+YNTYlmcR\\n0wTYtIBgtqS09JmCzw6NUFLU51FV7PjsXJ+FKNUxpzG1EnXIdXDNgXMHwTUDV5i6\\nsafCnsfJAgMBAAECggEANnLsfCJeLfAXKClGEwvp0exA8VI84MScc2A0Yfv5Iv2M\\ntMfpwHXQO5dZfsZ9ju6UvzVuxcn1xe9DkPdxzGXgHjOMwXI3QOw7teAgr9VXplsK\\nMolEPrnJX5gQHRfxmVD1wFKAOKwHvyhCCdVIVjJdTvSgYdNfbV0ZzTWzX9WRuRsn\\nlDAgrq414VMMr9YtqsuB2ERjbW+OrNZh9/8LjhklrJpihpRAwR20cfthTOMZLxfO\\nHIU5aEQ+naASNMFVEWLRsVTjdwDE8Mf57jFP/j0QLZZki7zWe19enNWo8tb3CtRI\\ntDoP5NfME4HKgJchmb+vTf0m7QPZ8HaC0m3cIXTvLQKBgQDsI2aVvhq7G2TNyV8g\\n0B8Xe+BPME8aE5z+MkgSFp6a40avdTCiF8vpLYD/cwXaFyC7us4f/nzb4lDJKfPY\\nRgzsMCs0jM33DF9uG6VUtgsBDqiuEK39g/wYUVD0kAmEvLxySn6K4H9A9q2GIOQs\\ndubiG4PWn2zwA+yjsq7JCG31dwKBgQC5kbVIWvzvU4O0WyTdK7ZRxiSbuDdqUgEK\\nnofvXbF3aSdGf0mU6grkB242VecpbxCGcRXlat1FKKjvg5Phw6nRJjjnFg6/RnmR\\n97kGug+TTeWcIwybxZOorxs77ZsulSU77VfJIo9pVTHQY7EaMIt8nGWcYYQ8TLbq\\n2hm0L4l8vwKBgQC0pJQ6o1ZhoqAnyQ/L00qltW8wRR2OLkjgMOjvZXxpssoFOZo9\\ntgSY2eWgBYcJgr3YvxwmX5F2yJfSfBR9c4E5QdQbfEen4UAzxFRjDGw4n9Usa7ge\\ng1Rb6gELRhDyCUwEBrbtWLYgpVSzkf/bgA46FKBzlDxLFEV4KR4KzjcIGwKBgQCC\\n9StEFsIte3iUzUWkt/aAmx62rjidVaXagqpX6H0XUiQfgjDBYLGy3vOOcO0jtnep\\nCSF0uAfTiLA/51FzoAu1yA2cN1rM7cVZl8MB1kiroeuKVsnNHI/qGTlU/4fmReby\\n9bpf/X3Lzg3LjK8tVlj55b1nsQILM/BaqPQ+ztVuLQKBgQCMJMGU6eIbQmSjjnkZ\\no9vxI9ow9E9qL1raLy+48X3W6Pil9bBFfiW5ua/c15HktEXPc8ZQ0cxm6TcuCks5\\nD/623iAazuDZBfU8FPwqgdlpIZr7DchmzlzgMxnE6gwRp1/LtUx521ueSy8FIjfi\\nzUB/fTvKgmzlwV5Vm7FTkwe77Q==\\n-----END PRIVATE KEY-----\\n\",\"client_email\":\"firebase-adminsdk-qw156@mydailystatus-d1232.iam.gserviceaccount.com\",\"client_id\":\"116874563288759931948\",\"auth_uri\":\"https://accounts.google.com/o/oauth2/auth\",\"token_uri\":\"https://oauth2.googleapis.com/token\",\"auth_provider_x509_cert_url\":\"https://www.googleapis.com/oauth2/v1/certs\",\"client_x509_cert_url\":\"https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qw156%40mydailystatus-d1232.iam.gserviceaccount.com\"}");
+
+/***/ }),
+
+/***/ "./lib/auth0.js":
 /*!**********************!*\
-  !*** ./Lib/auth0.js ***!
+  !*** ./lib/auth0.js ***!
   \**********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -120,6 +131,67 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./lib/db.js":
+/*!*******************!*\
+  !*** ./lib/db.js ***!
+  \*******************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const admin = __webpack_require__(/*! firebase-admin */ "firebase-admin");
+
+const secret = __webpack_require__(/*! ../firebase-secret.json */ "./firebase-secret.json");
+
+const {
+  GeoFirestore
+} = __webpack_require__(/*! geofirestore */ "geofirestore");
+
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert(secret)
+  });
+}
+
+const firestore = admin.firestore();
+const db = new GeoFirestore(firestore);
+module.exports = {
+  db
+};
+
+/***/ }),
+
+/***/ "./lib/geo.js":
+/*!********************!*\
+  !*** ./lib/geo.js ***!
+  \********************/
+/*! exports provided: distance */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "distance", function() { return distance; });
+//alert(calcCrow(59.3293371, 13.4877472, 59.3225525, 13.4619422).toFixed(1));
+// Converts numeric degrees to radians
+function toRad(Value) {
+  return Value * Math.PI / 180;
+} //This function takes in latitude and longitude of two location and returns the distance between them as the crow flies (in km)
+
+
+function distance(lat1, lon1, lat2, lon2) {
+  var R = 6371; // km
+
+  var dLat = toRad(lat2 - lat1);
+  var dLon = toRad(lon2 - lon1);
+  var lat1 = toRad(lat1);
+  var lat2 = toRad(lat2);
+  var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2);
+  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  var d = R * c;
+  return d;
+}
+
+/***/ }),
+
 /***/ "./pages/app.js":
 /*!**********************!*\
   !*** ./pages/app.js ***!
@@ -132,35 +204,92 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Lib_auth0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Lib/auth0 */ "./Lib/auth0.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _lib_auth0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/auth0 */ "./lib/auth0.js");
+/* harmony import */ var _lib_db__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lib/db */ "./lib/db.js");
+/* harmony import */ var _lib_db__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_lib_db__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _lib_geo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/geo */ "./lib/geo.js");
 var _jsxFileName = "/home/rivanildojr/Documentos/fullstack-lab-2020/pages/app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
+
 const App = props => {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (!props.isAuth) {
+      next_router__WEBPACK_IMPORTED_MODULE_1___default.a.push("/");
+    } else if (props.forceCreate) {
+      next_router__WEBPACK_IMPORTED_MODULE_1___default.a.push("/create-status");
+    }
+  });
+
+  if (!props.isAuth || props.forceCreate) {
+    return null;
+  }
+
   return __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 22,
       columnNumber: 5
     }
   }, __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 23,
       columnNumber: 7
     }
-  }, "App"), __jsx("pre", {
+  }, "Status pr\xF3ximos a voc\xEA:"), __jsx("table", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 24,
       columnNumber: 7
     }
-  }, JSON.stringify(props, null, 2)));
+  }, props.checkins.map(checkin => {
+    return __jsx("tr", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 13
+      }
+    }, __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 15
+      }
+    }, checkin.id === props.user.sub && "Seu status"), __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 15
+      }
+    }, checkin.status), __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 15
+      }
+    }, JSON.stringify(checkin.coords)), __jsx("td", {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 15
+      }
+    }, checkin.distance));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -168,26 +297,64 @@ async function getServerSideProps({
   req,
   res
 }) {
-  const session = await _Lib_auth0__WEBPACK_IMPORTED_MODULE_1__["default"].getSession(req);
+  const session = await _lib_auth0__WEBPACK_IMPORTED_MODULE_2__["default"].getSession(req);
 
   if (session) {
+    const today = new Date();
+    const currentDate = `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`;
+    const todayChekin = await _lib_db__WEBPACK_IMPORTED_MODULE_3__["db"].collection("markers").doc(currentDate).collection("checked").doc(session.user.sub).get();
+    const todaysData = todayChekin.data();
+    let forceCreate = true;
+
+    if (todaysData) {
+      forceCreate = false;
+      const checkins = await _lib_db__WEBPACK_IMPORTED_MODULE_3__["db"].collection("markers").doc(currentDate).collection("checked").near({
+        center: todaysData.coordinates,
+        radius: 1000
+      }).get();
+      const checkinsList = [];
+      checkins.docs.forEach(doc => {
+        checkinsList.push({
+          id: doc.id,
+          status: doc.data().status,
+          coords: {
+            lat: doc.data().coordinates.latitude,
+            long: doc.data().coordinates.longitude
+          },
+          distance: Object(_lib_geo__WEBPACK_IMPORTED_MODULE_4__["distance"])(todaysData.coordinates.latitude, todaysData.coordinates.longitude, doc.data().coordinates.latitude, doc.data().coordinates.longitude).toFixed(2)
+        });
+      });
+      return {
+        props: {
+          isAuth: true,
+          user: session.user,
+          forceCreate: false,
+          checkins: checkinsList
+        }
+      };
+    }
+
     return {
       props: {
-        user: session.user
+        isAuth: true,
+        user: session.user,
+        forceCreate
       }
     };
   }
 
   return {
     props: {
-      user: {}
+      isAuth: false,
+      user: {},
+      forceCreate
     }
   };
 }
 
 /***/ }),
 
-/***/ 4:
+/***/ 6:
 /*!****************************!*\
   !*** multi ./pages/app.js ***!
   \****************************/
@@ -207,6 +374,39 @@ module.exports = __webpack_require__(/*! /home/rivanildojr/Documentos/fullstack-
 /***/ (function(module, exports) {
 
 module.exports = require("@auth0/nextjs-auth0");
+
+/***/ }),
+
+/***/ "firebase-admin":
+/*!*********************************!*\
+  !*** external "firebase-admin" ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase-admin");
+
+/***/ }),
+
+/***/ "geofirestore":
+/*!*******************************!*\
+  !*** external "geofirestore" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("geofirestore");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 
